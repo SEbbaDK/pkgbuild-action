@@ -69,8 +69,7 @@ outputwarning "$(namcap PKGBUILD)"
 outputwarning "$(namcap "${pkgfile}")"
 echo "::endgroup::"
 
-ls -lah /
-sudo mv "$pkgfile" /github/workspace
+#sudo mv "$pkgfile" /github/workspace
 
 echo "::group::Generate .SRCINFO"
 makepkg --printsrcinfo > .SRCINFO
